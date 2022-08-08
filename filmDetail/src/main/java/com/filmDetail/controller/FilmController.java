@@ -25,7 +25,7 @@ public class FilmController {
 	
 	
 	@GetMapping("/film/{id}")
-	public ResponseEntity<Film> getEmployeeById(@PathVariable(name = "id") Long  id) {
+	public ResponseEntity<Film> getFilmById(@PathVariable(name = "id") Long  id) {
 
 		Optional<Film> optional = filmRepo.findById(id);
 
