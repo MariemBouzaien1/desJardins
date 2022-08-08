@@ -1,0 +1,9 @@
+package com.filmDetail.repository.copy;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.filmDetail.entity.Film;
+
+public interface IFilmRepository extends JpaRepository<Film, Long>{
+
+}

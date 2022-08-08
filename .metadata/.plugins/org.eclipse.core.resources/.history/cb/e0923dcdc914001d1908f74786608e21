@@ -1,0 +1,28 @@
+package com.filmDetail;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.filmDetail.entity.Film;
+import com.filmDetail.repository.IFilmRepository;
+
+@SpringBootApplication
+public class FilmDetailApplication implements CommandLineRunner {
+@Autowired
+IFilmRepository filmrepo;
+	public static void main(String[] args) {
+		SpringApplication.run(FilmDetailApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		// TODO Auto-generated method stub
+		filmrepo.save(new Film(1,"test1","test1.1"));
+		filmrepo.save(new Film(1,"test2","test2.2"));
+
+		
+	}
+
+}

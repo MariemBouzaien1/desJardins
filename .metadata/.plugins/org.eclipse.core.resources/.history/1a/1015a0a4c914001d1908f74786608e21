@@ -1,0 +1,13 @@
+package com.filmDetail;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class FilmDetailApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(FilmDetailApplication.class, args);
+	}
+
+}
